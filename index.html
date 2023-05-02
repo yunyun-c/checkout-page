@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="./img/devchallenges.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <div class="payment-info">
+      <div class="checkout">
+        <div class="checkout-items">
+          <div class="item">
+            <img class="pic" src="/img/photo1.png" alt="" />
+            <div class="price-detail">
+              <h3>Vintage Backbag</h3>
+              <h4>$54.99 <span>$94.99</span></h4>
+              <div class="quantity">
+                <button>-</button>
+                <label>0</label>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="pic" src="/img/photo2.png" alt="" />
+            <div class="price-detail">
+              <h3>Levi Shoes</h3>
+              <h4>$74.99 <span>$124.99</span></h4>
+              <div class="quantity">
+                <button>-</button>
+                <label>0</label>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+          <div class="total-detail">
+            <div class="shipping">
+              <h2>Shipping</h2>
+              <p>$19</p>
+            </div>
+            <div class="total">
+              <h2>Total</h2>
+              <p>$148.98</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-info">
+        <div class="contact">
+          <h2>Contact infomation</h2>
+          <form>
+            <div class="field">
+              <label for="">E-mail</label>
+
+              <span class="material-symbols-outlined"> mail </span>
+              <input
+                placeholder="Enter your email..."
+                class="input-field"
+                type="email"
+              />
+            </div>
+
+            <div class="field">
+              <label for="">Phone</label>
+              <span class="material-symbols-outlined"> call </span>
+              <input
+                placeholder="Enter your phone..."
+                class="input-field"
+                type="number"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="address">
+          <h2>Shipping address</h2>
+          <form>
+            <div class="field">
+              <label for="">Full name</label>
+              <span class="material-symbols-outlined"> account_circle </span>
+              <input
+                placeholder="Your full name..."
+                class="input-field"
+                type="text"
+              />
+            </div>
+
+            <div class="field">
+              <label for="">Address</label>
+              <span class="material-symbols-outlined"> home </span>
+              <input
+                placeholder="Your address..."
+                class="input-field"
+                type="text"
+              />
+            </div>
+
+            <div class="field">
+              <label for="">City</label>
+              <span class="material-symbols-outlined"> apartment </span>
+              <input
+                placeholder="Your city..."
+                class="input-field"
+                type="text"
+              />
+            </div>
+            <div class="country-postal">
+              <div class="field">
+                <label for="">Country</label>
+                <span class="material-symbols-outlined"> public </span>
+                <select name="country" class="input-field">
+                  <option value="1" selected disabled="true">
+                    Your Country..
+                  </option>
+                  <option value="2">USA</option>
+                  <option value="3">Taiwan</option>
+                  <option value="4">Japan</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="">Postal code</label>
+                <span class="material-symbols-outlined">
+                  markunread_mailbox
+                </span>
+                <input
+                  placeholder="Your postal code..."
+                  class="input-field"
+                  type="number"
+                />
+              </div>
+            </div>
+            <div class="check">
+              <input type="checkbox" />
+              <label for="checkbox">Save this information for next time</label>
+            </div>
+
+            <button class="btn" type="submit">Continue</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer><p>created by yunyun-c - devChallenges.io</p></footer>
+  </body>
+</html>
