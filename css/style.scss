@@ -78,10 +78,6 @@ h1 {
 }
 
 .quantity {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: #333333;
     border: 1px solid #828282;
     border-radius: 12px;
     width: 100%;
@@ -94,12 +90,20 @@ h1 {
     align-items: baseline;
 }
 
+.quantity p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+
 .quantity button {
     background: #e0e0e0;
     border-radius: 0.25rem;
     border: none;
     padding: 0.2rem 0.4rem;
     margin: 0.2rem 0.05rem;
+    font-weight: 600;
     font-size: 16px;
     color: #828282;
 }
@@ -133,6 +137,9 @@ h1 {
     color: #333333;
 }
 
+.input-info {
+    width: 100%;
+}
 .contact,
 .address {
     margin-top: 3rem;
@@ -183,8 +190,15 @@ h1 {
     padding-left: 2rem;
 }
 
-.field input,
-.field select {
+input[type="text"] {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    padding-left: 2rem;
+}
+
+.input-field {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -209,9 +223,9 @@ span.material-symbols-outlined {
 
 .country-postal {
     display: flex;
+    gap: 1rem;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 0.3rem;
+    width: 100%;
 }
 
 .country-postal select {
@@ -220,7 +234,39 @@ span.material-symbols-outlined {
     line-height: 15px;
     color: #828282;
     padding-left: 2rem;
+    cursor: pointer;
+}
+
+select.country-name {
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    padding-left: 2rem;
+}
+
+.select-field {
+    width: 180px;
+    padding: 1rem;
+    border: 1px solid #828282;
     appearance: none;
+    border-radius: 12px;
+    vertical-align: middle;
+    background: transparent;
+}
+
+.select-field.material-symbols-outlined {
+    font-family: "Material Icons";
+    z-index: -1;
+    font-size: 16px;
+    color: #828282;
+    border: none;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    padding: 0.1rem;
+    top: 42.5px;
+    left: 150px;
+    width: 21px;
+    text-align: center;
 }
 
 .check {
@@ -253,6 +299,10 @@ span.material-symbols-outlined {
     float: right;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 footer {
     margin: 5rem 0 1rem;
 }
@@ -267,22 +317,28 @@ footer p {
 
 @media (min-width: 768px) {
     h1 {
-        padding-left: 9.5rem;
+        padding-left: 10.5rem;
         font-size: 36px;
         line-height: 44px;
     }
 
     .checkout {
-        width: 27%;
+        width: 30%;
     }
+
+    .checkout-items {
+        width: 100%;
+        height: auto;
+    }
+
     .checkout-items img {
-        width: 40%;
+        width: 36%;
         margin: 1rem;
     }
 
     .price-detail {
         width: 50%;
-        gap: 1.3rem;
+        gap: 1.5rem;
     }
 
     .price-detail h3 {
@@ -324,6 +380,10 @@ footer p {
         line-height: 17px;
     }
 
+    .input-info {
+        width: 33%;
+    }
+
     .payment-info {
         display: flex;
         flex-direction: row-reverse;
@@ -331,7 +391,22 @@ footer p {
         align-items: flex-start;
     }
 
-    // .field input {
-    //     padding: 1rem 2rem;
-    // }
+    .contact h2,
+    .address h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .country-postal {
+        width: 100%;
+    }
+
+    .select-field {
+        width: 208px;
+        padding: 1rem;
+    }
+
+    .select-field.material-symbols-outlined {
+        left: 175px;
+    }
 }

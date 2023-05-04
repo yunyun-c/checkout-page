@@ -23,9 +23,9 @@
               <h3>Vintage Backbag</h3>
               <h4>$54.99 <span>$94.99</span></h4>
               <div class="quantity">
-                <button>-</button>
-                <label>0</label>
-                <button>+</button>
+                <button class="btn-minus">-</button>
+                <p class="quantity-p">1</p>
+                <button class="btn-plus">+</button>
               </div>
             </div>
           </div>
@@ -35,9 +35,9 @@
               <h3>Levi Shoes</h3>
               <h4>$74.99 <span>$124.99</span></h4>
               <div class="quantity">
-                <button>-</button>
-                <label>0</label>
-                <button>+</button>
+                <button class="btn-minus">-</button>
+                <p class="quantity-p">1</p>
+                <button class="btn-plus">+</button>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@
               <input
                 placeholder="Enter your phone..."
                 class="input-field"
-                type="number"
+                type="text"
               />
             </div>
           </form>
@@ -116,13 +116,16 @@
               <div class="field">
                 <label for="">Country</label>
                 <span class="material-symbols-outlined"> public </span>
-                <select name="country" class="input-field">
+                <span class="select-field material-symbols-outlined">
+                  expand_more
+                </span>
+                <select name="country" class="select-field">
                   <option value="1" selected disabled="true">
-                    Your Country..
+                    Your Country...
                   </option>
-                  <option value="2">USA</option>
-                  <option value="3">Taiwan</option>
-                  <option value="4">Japan</option>
+                  <option class="country-name" value="2">USA</option>
+                  <option class="country-name" value="3">Taiwan</option>
+                  <option class="country-name" value="4">Japan</option>
                 </select>
               </div>
 
@@ -134,7 +137,7 @@
                 <input
                   placeholder="Your postal code..."
                   class="input-field"
-                  type="number"
+                  type="text"
                 />
               </div>
             </div>
