@@ -7,6 +7,7 @@
     <title>Checkout Page</title>
     <link rel="icon" type="image/png" href="./img/devchallenges.png" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="/src/script.js" defer></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -21,10 +22,14 @@
             <img class="pic" src="/img/photo1.png" alt="" />
             <div class="price-detail">
               <h3>Vintage Backbag</h3>
-              <h4>$54.99 <span>$94.99</span></h4>
+              <div class="pri">
+                <h4 class="price-discount">$54.99</h4>
+                <span class="price-original">$94.99</span>
+              </div>
+
               <div class="quantity">
                 <button class="btn-minus">-</button>
-                <p class="quantity-p">1</p>
+                <p id="quantity-p">1</p>
                 <button class="btn-plus">+</button>
               </div>
             </div>
@@ -33,10 +38,14 @@
             <img class="pic" src="/img/photo2.png" alt="" />
             <div class="price-detail">
               <h3>Levi Shoes</h3>
-              <h4>$74.99 <span>$124.99</span></h4>
+              <div class="pri">
+                <h4 class="price-discount">$74.99</h4>
+                <span class="price-original">$124.99</span>
+              </div>
+
               <div class="quantity">
                 <button class="btn-minus">-</button>
-                <p class="quantity-p">1</p>
+                <p id="quantity-p">1</p>
                 <button class="btn-plus">+</button>
               </div>
             </div>
@@ -48,7 +57,7 @@
             </div>
             <div class="total">
               <h2>Total</h2>
-              <p>$148.98</p>
+              <p class="total-price">$148.98</p>
             </div>
           </div>
         </div>
@@ -58,18 +67,18 @@
           <h2>Contact infomation</h2>
           <form>
             <div class="field">
-              <label for="">E-mail</label>
+              <label>E-mail</label>
 
               <span class="material-symbols-outlined"> mail </span>
               <input
                 placeholder="Enter your email..."
                 class="input-field"
-                type="email"
+                type="text"
               />
             </div>
 
             <div class="field">
-              <label for="">Phone</label>
+              <label>Phone</label>
               <span class="material-symbols-outlined"> call </span>
               <input
                 placeholder="Enter your phone..."
@@ -84,7 +93,7 @@
           <h2>Shipping address</h2>
           <form>
             <div class="field">
-              <label for="">Full name</label>
+              <label>Full name</label>
               <span class="material-symbols-outlined"> account_circle </span>
               <input
                 placeholder="Your full name..."
@@ -94,7 +103,7 @@
             </div>
 
             <div class="field">
-              <label for="">Address</label>
+              <label>Address</label>
               <span class="material-symbols-outlined"> home </span>
               <input
                 placeholder="Your address..."
@@ -104,7 +113,7 @@
             </div>
 
             <div class="field">
-              <label for="">City</label>
+              <label>City</label>
               <span class="material-symbols-outlined"> apartment </span>
               <input
                 placeholder="Your city..."
@@ -114,7 +123,7 @@
             </div>
             <div class="country-postal">
               <div class="field">
-                <label for="">Country</label>
+                <label>Country</label>
                 <span class="material-symbols-outlined"> public </span>
                 <span class="select-field material-symbols-outlined">
                   expand_more
@@ -130,7 +139,7 @@
               </div>
 
               <div class="field">
-                <label for="">Postal code</label>
+                <label>Postal code</label>
                 <span class="material-symbols-outlined">
                   markunread_mailbox
                 </span>
@@ -143,12 +152,28 @@
             </div>
             <div class="check">
               <input type="checkbox" />
-              <label for="checkbox">Save this information for next time</label>
+              <label>Save this information for next time</label>
             </div>
 
             <button class="btn" type="submit">Continue</button>
           </form>
         </div>
+      </div>
+    </div>
+    <div class="message">
+      <div class="success">
+        <span class="material-icons">check_circle</span>
+        <p>Your information has been submitted successfully.</p>
+        <button class="close-btn" aria-label="Close message">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="error">
+        <span class="material-icons">error</span>
+        <p>Please fill out all the required fields.</p>
+        <button class="close-btn" aria-label="Close message">
+          <span class="material-icons">close</span>
+        </button>
       </div>
     </div>
 
